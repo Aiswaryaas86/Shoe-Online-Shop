@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoe Online Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Shoe Online Shop</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shop.html">Products</a></li>
+                    <li><a href="#" onclick="scrollToSection('about')">About Us</a></li>
+                    <li><a href="#" onclick="scrollToSection('contact')">Contact</a></li>
+                    <li><a href="login_signup.html">Login/SignUp</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+            </div>
+            <div class="icons">
+                <i class="fa-solid fa-heart"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h2>Step Up Your Style</h2>
+            <p>Find your perfect pair of shoes with us.</p>
+            <a href="login_signup.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div id="about" class="footer-section">
+                <h3>About Us</h3>
+                <p>We are a leading shoe store providing the best quality<br>
+                    footwear for all occasions. Our mission is to bring you the<br>
+                    latest trends and the most comfortable shoes.</p>
+            </div>
+            <div id="contact" class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: contact@shoeonlineshop.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: 123 Shoe Street, Footwear City, FS 45678</p>
+            </div>
+        </div>
+        <div class="container">
+            <p>&copy; 2024 Shoe Online Shop. All rights reserved.</p>
+        </div>
+    </footer>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
